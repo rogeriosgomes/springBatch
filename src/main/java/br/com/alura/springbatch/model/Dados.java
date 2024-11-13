@@ -12,13 +12,14 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class dados {
+public class Dados {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
     private String cpf;
+    private String agencia;
     private String conta;
     private Double valor;
     private String mesReferencia;
